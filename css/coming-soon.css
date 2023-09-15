@@ -3,21 +3,18 @@ body, html {
 }
 
 .bgimg {
-    /* Background image */
-    background-image: url('/assets/images/144080.jpg');
-    /* Full-screen */
+    background-image:
+            linear-gradient(
+                    rgba(0, 0, 0, 0.7),
+                    rgba(0, 0, 0, 0.7)
+            ),
+            url('../assets/images/144080.jpg');
     height: 100%;
-    /* Center the background image */
     background-position: center;
-    /* Scale and zoom in the image */
     background-size: cover;
-    /* Add position: relative to enable absolutely positioned elements inside the image (place text) */
     position: relative;
-    /* Add a white text color to all elements inside the .bgimg container */
     color: white;
-    /* Add a font */
     font-family: "Courier New", Courier, monospace;
-    /* Set the font-size to 25 pixels */
     font-size: 25px;
 }
 
@@ -28,13 +25,19 @@ body, html {
     left: 16px;
 }
 
-img[src*="LHR-logo(white"] { width: 50%; }
+img[src*="LHR-logo(white"] { width: 30%; }
 
 /* Position text in the bottom-left corner */
 .bottomleft {
     position: absolute;
     bottom: 0;
     left: 16px;
+}
+
+.construction {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 /* Position text in the middle */
@@ -48,7 +51,7 @@ img[src*="LHR-logo(white"] { width: 50%; }
 
 .middle > p {
     padding-top: 20px;
-    font-weight: bolder;
+    /*font-weight: bolder;*/
 }
 
 /* Style the <hr> element */

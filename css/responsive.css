@@ -118,6 +118,8 @@
 
     img[src*="LHR-logo(white)"] { width: 20%;}
 
+    .middle > .construction > h1 { font-size: 40px; }
+
     .middle {
         position: absolute;
         top: 30%;
@@ -126,10 +128,7 @@
         left: initial;
     }
 
-    .middle > p {
-        padding: 20px 15px;
-        font-weight: bold;
-    }
+    .middle > p { padding: 20px 15px; }
 
 
     /* End of Coming Soon page */
