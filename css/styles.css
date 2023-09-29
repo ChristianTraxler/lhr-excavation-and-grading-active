@@ -11,6 +11,7 @@ body {
     "header header"
     "welcome welcome"
     "services services"
+    "before-after-area before-after-area"
     "footer footer";
     grid-template-rows: 60px auto auto auto auto;
     grid-template-columns: 1fr 3fr;
@@ -57,7 +58,7 @@ nav > ul > li > a {
 /*    display: block;*/
 /*}*/
 
-.before-after {
+.before-after-link {
     padding: 8px 20px 0 20px;
     font-family: 'Black Ops One', sans-serif;
 }
@@ -117,13 +118,20 @@ img[src*="LHR-Grading(2)"] {
 }
 
 .services > h1 {
+    padding: 60px 0;
+    font-size: 40px;
+    text-align: center;
+    font-family: 'Black Ops One', sans-serif;
+}
+
+.services, .before-after-area > h1 {
     padding: 100px 0 50px 0;
     font-size: 40px;
     text-align: center;
     font-family: 'Black Ops One', sans-serif;
 }
 
-.services > div > h1 {
+.services, .before-after-area > div > h1 {
     padding: 60px 0;
     font-size: 40px;
     text-align: center;
@@ -140,6 +148,14 @@ img[src*="LHR-Grading(2)"] {
     text-indent: 50px;
 }
 
+.before-after-area {
+    grid-area: before-after-area;
+    background-color: orangered;
+    position: relative;
+    bottom: 150px;
+    padding-bottom: 150px;
+}
+
 /*div > ul { display: inline-block; }*/
 
 /*div > ul.jobs {*/
@@ -153,10 +169,131 @@ ul.jobs {
     font-size: 18px;
 }
 
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+/* Start of Home page */
+
+.slideshow {
+    padding-top: 50px;
+}
+
+.w3-content {
+    margin: auto;
+    /*padding-top: 50px;*/
+    width: 90%;
+}
+
+img[src*="IMG_8742"], img[src*="IMG_8743"], img[src*="IMG_8744"] {
+    border-radius: 10px;
+}
+
+.w3-black, .w3-hover-black:hover {
+    color: #fff!important;
+    background-color: #000!important;
+    top: 60%;
+}
+
+.w3-display-left {
+    position: absolute;
+    top: 50% !important;
+    left: 10% !important;
+    transform: translate(0%,-50%);
+    -ms-transform: translate(-0%,-50%);
+}
+
+.w3-display-right {
+    position: absolute;
+    top: 50% !important;
+    right: 10% !important;
+    transform: translate(0%,-50%);
+    -ms-transform: translate(-0%,-50%);
+}
+
+
+
+/* End of Home page */
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+/* Start of Projects page */
+
+.mySlides {
+    width: 80% !important;
+    margin: auto;
+    border-radius: 10px;
+}
+
+img[src*="IMG_0544"], img[src*="IMG_6590"] {
+    display: flex;
+    position: relative;
+    margin: 0;
+    border-radius: 10px;
+}
+
+
+
+
+/* End of Projects page *?
+
 
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 
 /* Start of Before & After page */
+
+/* Style the list */
+ul.breadcrumb {
+    padding: 10px 16px;
+    list-style: none;
+    background-color: #eee;
+    text-align: left;
+}
+
+/* Display list items side by side */
+ul.breadcrumb li {
+    display: inline;
+    font-size: 18px;
+}
+
+/* Add a slash symbol (/) before/behind each list item */
+ul.breadcrumb li+li:before {
+    padding: 8px;
+    color: black;
+    content: "/\00a0";
+}
+
+/* Add a color to all links inside the list */
+ul.breadcrumb li a {
+    /*color: #0275d8;*/
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Add a color on mouse-over */
+ul.breadcrumb li a:hover {
+    color: #01447e;
+    text-decoration: underline;
+}
+
+.active {
+    color: #0275d8;
+}
+
+.not-active { color: gray; }
+
+.before-after {
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+
+}
+
+.card {
+    margin: 0 auto;
+    padding: 15px 10px 0 10px;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.35) 0 5px 15px;
+    border-radius: 10px;
+    width: 70%;
+}
 
 .before, .after > h3 {
     font-size: 30px;
@@ -173,39 +310,43 @@ ul.jobs {
 
 .before > h3 {
     position: relative;
-    text-align: right;
-    top: 250px;
-    left: 800px;
-    width: 8%;
+    /*text-align: right;*/
+    /*top: 250px;*/
+    /*left: 800px;*/
+    /*width: 8%;*/
     overflow-wrap: initial;
 }
 
 img[src*="IMG_8742"] {
     display: flex;
-    padding: 40px;
-    margin: 0;
-    -webkit-filter: drop-shadow(5px 5px 5px #222);
-    filter: drop-shadow(5px 5px 5px #222);
+    /* padding: 40px; */
+    margin: auto;
+    /* -webkit-filter: drop-shadow(5px 5px 5px #222); */
+    /* filter: drop-shadow(5px 5px 5px #222); */
+    justify-content: center;
+    width: 100%;
+    border-radius: 10px;
 }
 
-img[src*="IMG_0259"] {
+img[src*="IMG_1226"] {
     display: flex;
     position: relative;
-    padding: 40px;
+    /*padding: 40px;*/
     margin: 0;
-    left: 100%;
-    -webkit-filter: drop-shadow(5px 5px 5px #222);
-    filter: drop-shadow(5px 5px 5px #222);
+    border-radius: 10px;
+    /*left: 100%;*/
+    /*-webkit-filter: drop-shadow(5px 5px 5px #222);*/
+    /*filter: drop-shadow(5px 5px 5px #222);*/
 }
 
 .before-wrapper, .after-wrapper {
     display: grid;
-    grid-template-rows: repeat(1, 1fr);
-    grid-template-columns: repeat(2, 50%);
+    /*grid-template-rows: repeat(1, 1fr);*/
+    /*grid-template-columns: repeat(2, 50%);*/
     margin: auto;
     width: 100%;
     max-width: 1200px;
-    padding: 0 30px;
+    /*padding: 10px 30px;*/
     /*position: relative;*/
 }
 
@@ -243,6 +384,16 @@ img[src*="IMG_0259"] {
     font-family: 'Black Ops One', sans-serif;
 }
 
+.contact-2 {
+    padding-top: 40px;
+    font-size: 18px;
+}
+
+.contact-2 > p > a {
+    color: black;
+}
+
+.contact-2 > .tel { color: black; }
 
 
 /* End of Contact page */
@@ -604,3 +755,28 @@ a.lightbox-close:after {
 .lightbox-target:target a.lightbox-close {
     top: 0;
 }
+
+
+
+
+
+/* ----------------- Testing ------------------ */
+
+/*.parallax {*/
+/*    !* The image used *!*/
+/*    background-image: url("assets/images/before/IMG_8742.JPG");*/
+
+/*    !* Set a specific height *!*/
+/*    min-height: 500px;*/
+
+/*    !* Create the parallax scrolling effect *!*/
+/*    background-attachment: fixed;*/
+/*    background-position: center;*/
+/*    background-repeat: no-repeat;*/
+/*    background-size: cover;*/
+/*}*/
+
+.commonninja-ribbon-link {
+    display: none !important;
+}
+
