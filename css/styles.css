@@ -291,7 +291,7 @@ ul.breadcrumb li a:hover {
 
 .projects-wrapper {
     display: block;
-    padding: var(--size-50) 0;
+    padding: 0 50px 50px 50px;
     margin: 0 auto;
 }
 
