@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+<<<<<<< HEAD
       <module fileurl="file://$PROJECT_DIR$/.idea/LHR-excavation-and-grading-Testing.iml" filepath="$PROJECT_DIR$/.idea/LHR-excavation-and-grading-Testing.iml" />
+=======
+      <module fileurl="file://$PROJECT_DIR$/.idea/LHR-excavation-and-grading-Test.iml" filepath="$PROJECT_DIR$/.idea/LHR-excavation-and-grading-Test.iml" />
+>>>>>>> 0df04e6b923d4b1a427bb6468da5ea7dd8b2c8c6
     </modules>
   </component>
 </project>

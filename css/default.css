@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:wght@400;500;600;700&display=swap');
 
 :root {
@@ -14,6 +15,22 @@
 
     --font-display: 'Bebas Neue', 'Anton', sans-serif;
     --font-body: 'Barlow', sans-serif;
+=======
+:root {
+    --white: #FFF;
+    --black: #000;
+    --font-color-base: #666;
+    --font-color-dark: #212529;
+    --font-color-light: #B0AEBE;
+    --font-color-link: #57A6FF;
+    --footer: #34314B;
+    --footer-base: #2E2B45;
+    --contrast: rgba(246, 248, 249, 0.8);
+    --success: #64ECF5;
+    --danger: #FF8B8D;
+    --grad-1: #A1ECFF;
+    --grad-2:#7DBCFF;
+>>>>>>> 0df04e6b923d4b1a427bb6468da5ea7dd8b2c8c6
 
     --size-10: 0.625rem;
     --size-14: 0.875rem;
@@ -30,6 +47,7 @@
 
 html { scroll-behavior: smooth; }
 
+<<<<<<< HEAD
 *, *::before, *::after { box-sizing: border-box; }
 
 * { margin: 0; }
@@ -42,13 +60,51 @@ body {
     color: var(--off-white);
 }
 
+=======
+/* 1. Use a more-intuitive box-sizing model. */
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+/* 2. Remove default margin */
+* {
+    margin: 0;
+}
+
+/* Typographic tweaks!
+  3. Add accessible line-height
+  4. Improve text rendering */
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+}
+
+/* 5. Improve media defaults */
+>>>>>>> 0df04e6b923d4b1a427bb6468da5ea7dd8b2c8c6
 img, picture, video, canvas, svg {
     display: block;
     max-width: 100%;
 }
 
+<<<<<<< HEAD
 input, button, textarea, select { font: inherit; }
 
 p, h1, h2, h3, h4, h5, h6 { overflow-wrap: break-word; }
 
 #root, #__next { isolation: isolate; }
+=======
+/* 6. Remove built-in form typography styles */
+input, button, textarea, select {
+    font: inherit;
+}
+
+/* 7. Avoid text overflows */
+p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+}
+
+/* 8. Create a root stacking context */
+#root, #__next {
+    isolation: isolate;
+}
+>>>>>>> 0df04e6b923d4b1a427bb6468da5ea7dd8b2c8c6

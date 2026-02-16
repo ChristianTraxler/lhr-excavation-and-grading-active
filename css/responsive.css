@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* ========================================
    TABLET (1024px and below)
    ======================================== */
@@ -82,12 +83,81 @@
     }
 
     .before-wrapper, .after-wrapper { padding: initial; }
+=======
+/* --------------- Start of Tablet responsiveness --------------- */
+
+@media screen and (max-width: 1024px) and (orientation: landscape) {
+
+    .mobile { display: none; }
+    .mobile-landscape {display: initial; }
+
+    /*.services { bottom: 100px; }*/
+
+    /* Start of Before & After page */
+
+    /*.before-wrapper, .after-wrapper { padding: initial; }*/
+
+
+    /* End of Before & After page */
+
+    /*footer .footer-top { padding-top: 85px; }*/
+}
+
+@media screen and (max-width: 768px) and (orientation: landscape) {
+
+    .mobile-landscape { display: none; }
+
+    /*.services { bottom: 100px; }*/
+
+    /*.before > h3 {*/
+    /*    top: 165px;*/
+    /*    left: 473px;*/
+    /*}*/
+
+    /*.after > h3 {*/
+    /*    top: 170px;*/
+    /*    left: 150px;*/
+    /*}*/
+
+    /*.before-wrapper, .after-wrapper { padding: initial; }*/
+
+    /*footer .footer-top { padding-top: 85px; }*/
+}
+
+@media screen and (max-width: 768px) {
+
+    img[src*="DOC"] { width: 4%; }
+
+    .before-wrapper, .after-wrapper { padding: initial; }
+
+    .before > h3 {
+        top: initial;
+        left: initial;
+    }
+}
+
+@media screen and (min-width: 667px) and (max-width: 736px) {
+
+    /* Start of Header section */
+
+    video { display: none; }
+
+    .mobile-landscape { display: initial; }
+
+
+    /* End of Header section */
+
+    /* Start of Before & After page */
+
+    /*.before-wrapper, .after-wrapper { padding: initial; }*/
+>>>>>>> 0df04e6b923d4b1a427bb6468da5ea7dd8b2c8c6
 
     .before > h3 {
         top: initial;
         left: initial;
     }
 
+<<<<<<< HEAD
     img[src*="DOC"] { width: 18px; height: 18px; }
 
     .before-after {
@@ -146,10 +216,70 @@
         width: 100%;
         height: 100%;
         object-fit: cover;
+=======
+
+    /* End of Before & After page */
+
+
+    /* Start of Footer section */
+
+    img[src*="DOC"] {
+        width: 4%;
+        /*top: 9px;*/
+    }
+
+    /* End of Footer section */
+
+}
+
+/* --------------- End of Tablet responsiveness --------------- */
+
+/* --------------- Start of Mobile responsiveness --------------- */
+
+@media screen and (max-width: 836px) and (orientation: landscape) {
+
+    .mobile { display: none; }
+
+    /*.services { bottom: 100px; }*/
+
+    /*.before > h3 {*/
+    /*    top: 183px;*/
+    /*    left: 544px;*/
+    /*}*/
+
+    /*.after > h3 {*/
+    /*    top: 180px;*/
+    /*    left: 166px;*/
+    /*}*/
+
+    /*footer .footer-top { padding-top: 85px; }*/
+}
+
+@media screen and (min-width: 766px) and (max-width: 832px) and (orientation: landscape) {
+
+    /*video { display: none; }*/
+    .mobile-landscape { display: initial; }
+
+    .services-container > p, ul.jobs { font-size: 16px; }
+}
+
+@media screen and (min-width: 567px) and (max-width: 665px) and (orientation: landscape) {
+
+    /*video, .desktop { display: none; }*/
+
+    .mobile { display: none; }
+
+    .mobile-landscape { display: initial; }
+
+    img[src*="DOC"] {
+        width: 5%;
+        /*top: 9px;*/
+>>>>>>> 0df04e6b923d4b1a427bb6468da5ea7dd8b2c8c6
     }
 }
 
 
+<<<<<<< HEAD
 /* ========================================
    MOBILE (480px and below)
    ======================================== */
@@ -165,6 +295,13 @@
 
     /* Coming Soon page */
     img[src*="LHR-logo(white)"] { width: 20%; }
+=======
+@media screen and (max-width: 480px) {
+
+    /* Coming Soon page */
+
+    img[src*="LHR-logo(white)"] { width: 20%;}
+>>>>>>> 0df04e6b923d4b1a427bb6468da5ea7dd8b2c8c6
 
     .middle > .construction > h1 { font-size: 40px; }
 
@@ -178,6 +315,7 @@
 
     .middle > p { padding: 20px 15px; }
 
+<<<<<<< HEAD
     /* Nav */
     .navbar-nav { height: 60px; }
 
@@ -304,10 +442,102 @@
 
     /* Slideshow */
     .mySlides { width: 100% !important; }
+=======
+
+    /* End of Coming Soon page */
+
+    /* Start of Home page */
+
+    .mySlides { width: 100% !important; }
+
+    .w3-display-left { left: 0 !important; }
+    .w3-display-right { right: 0 !important; }
+
+
+    /* End of Home page */
+
+
+    .container { grid-template-rows: 60px 233px auto auto; }
+
+    .welcome { bottom: initial; }
+
+    .services {
+        /*padding-bottom: 250px;*/
+        bottom: 5px;
+    }
+
+    .before-after-area {
+        padding-bottom: 250px;
+        bottom: 5px;
+    }
+
+    .services-container { padding-bottom: 100px; }
+
+    .desktop { bottom: initial; }
+
+    .mobile-landscape { display: none; }
+
+    .mobile { display: initial; }
+
+    /*.before-after { padding: 10px 20px; }*/
+
+    .before-wrapper, .after-wrapper {
+        display: initial;
+        padding: initial;
+    }
+
+    img[src*="DOC"] {
+        width: 6%;
+        /*top: 7px;*/
+    }
+
+    .photos {
+        display: grid;
+        padding: 20px;
+    }
+
+    img[src*="DSC4266"], img[src*="DSC4279"] {
+        width: 100%;
+        margin: auto;
+        padding: 1%;
+    }
+
+    /* Start of Before & After page */
+
+
+
+    .before-after {
+        grid-template-columns: initial;
+        grid-row-gap: 2%;
+        padding: 10px 10px 100px 10px;
+    }
+
+    .card { width: initial; }
+
+    .card2 { height: initial; }
+
+    /*.lightbox > img[src*="IMG_8742"] {*/
+    /*    width: initial;*/
+    /*    margin: initial;*/
+    /*}*/
+
+    /* End of Before & After page */
+
+    /* Start of Contact page */
+
+    .contact-2 { padding-bottom: 100px; }
+
+
+
+
+
+    /* End of Contact page */
+>>>>>>> 0df04e6b923d4b1a427bb6468da5ea7dd8b2c8c6
 }
 
 @media screen and (max-width: 400px) {
 
+<<<<<<< HEAD
     .hero-overlay h1 {
         font-size: 2rem;
     }
@@ -315,11 +545,26 @@
     .services-grid {
         grid-template-columns: 1fr;
     }
+=======
+    .container { grid-template-rows: 60px 221px auto auto; }
+
+    /*.before-after { padding: 10px 20px; }*/
+
+>>>>>>> 0df04e6b923d4b1a427bb6468da5ea7dd8b2c8c6
 }
 
 @media screen and (max-width: 375px) {
 
+<<<<<<< HEAD
     .hero-overlay h1 {
         font-size: 1.8rem;
     }
 }
+=======
+    .container { grid-template-rows: 60px 211px auto auto; }
+
+    /*img[src*="DOC"] { top: 6px; }*/
+}
+
+/* --------------- End of Mobile responsiveness --------------- */
+>>>>>>> 0df04e6b923d4b1a427bb6468da5ea7dd8b2c8c6
