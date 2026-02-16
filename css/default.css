@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:wght@400;500;600;700&display=swap');
+
+:root {
+    --dark: #2D2F31;
+    --dark-deep: #1E1F21;
+    --dark-card: #35373A;
+    --accent: #FF4500;
+    --accent-glow: rgba(255, 69, 0, 0.15);
+    --accent-dim: #C23600;
+    --white: #FFFFFF;
+    --off-white: #E8E6E3;
+    --gray: #9A9A9A;
+    --gray-dark: #6B6B6B;
+
+    --font-display: 'Bebas Neue', 'Anton', sans-serif;
+    --font-body: 'Barlow', sans-serif;
+
+    --size-10: 0.625rem;
+    --size-14: 0.875rem;
+    --size-16: 1rem;
+    --size-18: 1.125rem;
+    --size-20: 1.25rem;
+    --size-25: 1.5625rem;
+    --size-30: 1.875rem;
+    --size-40: 2.5rem;
+    --size-50: 3.125rem;
+    --size-100: 6.25rem;
+    --size-150: 9.325rem;
+}
+
+html { scroll-behavior: smooth; }
+
+*, *::before, *::after { box-sizing: border-box; }
+
+* { margin: 0; }
+
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    font-family: var(--font-body);
+    background-color: var(--dark);
+    color: var(--off-white);
+}
+
+img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+}
+
+input, button, textarea, select { font: inherit; }
+
+p, h1, h2, h3, h4, h5, h6 { overflow-wrap: break-word; }
+
+#root, #__next { isolation: isolate; }

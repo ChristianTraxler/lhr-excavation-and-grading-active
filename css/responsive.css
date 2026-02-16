@@ -1,0 +1,325 @@
+/* ========================================
+   TABLET (1024px and below)
+   ======================================== */
+
+@media screen and (max-width: 1024px) {
+
+    .services-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .welcome-grid {
+        gap: 40px;
+    }
+}
+
+/* ========================================
+   TABLET LANDSCAPE
+   ======================================== */
+
+@media screen and (max-width: 1024px) and (orientation: landscape) {
+
+    .mobile { display: none; }
+    .mobile-landscape { display: initial; }
+
+    header > img.mobile-landscape {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+@media screen and (max-width: 768px) and (orientation: landscape) {
+    .mobile-landscape { display: none; }
+}
+
+
+/* ========================================
+   TABLET PORTRAIT (768px and below)
+   ======================================== */
+
+@media screen and (max-width: 768px) {
+
+    .welcome {
+        padding: 80px 24px 60px;
+    }
+
+    .welcome-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .photos {
+        order: -1;
+    }
+
+    .photos img:first-child {
+        margin-top: 0;
+    }
+
+    .services {
+        padding: 80px 24px 100px;
+    }
+
+    .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+    }
+
+    .service-card {
+        padding: 22px 18px;
+    }
+
+    .image-break {
+        height: 40vh;
+        min-height: 280px;
+    }
+
+    .cta-section {
+        padding: 80px 24px;
+    }
+
+    .before-wrapper, .after-wrapper { padding: initial; }
+
+    .before > h3 {
+        top: initial;
+        left: initial;
+    }
+
+    img[src*="DOC"] { width: 18px; height: 18px; }
+
+    .before-after {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+    .projects-wrapper {
+        padding: 0 16px 40px 16px;
+    }
+
+    .card { width: initial; }
+    .card2 { height: initial; }
+}
+
+
+/* ========================================
+   MOBILE LANDSCAPE
+   ======================================== */
+
+@media screen and (max-width: 836px) and (orientation: landscape) {
+    .mobile { display: none; }
+}
+
+@media screen and (min-width: 766px) and (max-width: 832px) and (orientation: landscape) {
+    .mobile-landscape { display: initial; }
+
+    header > img.mobile-landscape {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+@media screen and (min-width: 667px) and (max-width: 736px) and (orientation: landscape) {
+    .mobile-landscape { display: initial; }
+
+    header > img.mobile-landscape {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+@media screen and (min-width: 567px) and (max-width: 665px) and (orientation: landscape) {
+    .mobile { display: none; }
+    .mobile-landscape { display: initial; }
+
+    header > img.mobile-landscape {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+
+/* ========================================
+   MOBILE (480px and below)
+   ======================================== */
+
+@media screen and (max-width: 480px) {
+
+    /* Photos/project pages — flush to nav */
+    .container > header {
+        height: 30vh;
+        min-height: 200px;
+        padding-top: 0;
+    }
+
+    /* Coming Soon page */
+    img[src*="LHR-logo(white)"] { width: 20%; }
+
+    .middle > .construction > h1 { font-size: 40px; }
+
+    .middle {
+        position: absolute;
+        top: 30%;
+        text-align: center;
+        transform: initial;
+        left: initial;
+    }
+
+    .middle > p { padding: 20px 15px; }
+
+    /* Nav */
+    .navbar-nav { height: 60px; }
+
+    .contact {
+        padding: 16px 20px;
+        font-size: 1rem;
+        letter-spacing: 1px;
+    }
+
+    /*img[src*="LHR-Grading(2)"] { width: 45px; }*/
+
+    /* Hero */
+    header {
+        height: 85vh;
+        min-height: 500px;
+    }
+
+    .hero-overlay {
+        bottom: 12%;
+    }
+
+    .hero-overlay h1 {
+        font-size: 2.5rem;
+        letter-spacing: 2px;
+    }
+
+    .hero-tagline {
+        font-size: 0.8rem;
+        letter-spacing: 2px;
+    }
+
+    .mobile-landscape { display: none; }
+    .mobile { display: initial; }
+
+    /* Welcome */
+    .welcome {
+        padding: 60px 20px 40px;
+    }
+
+    .welcome-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .section-title {
+        font-size: 2.2rem;
+    }
+
+    .welcome-text p {
+        font-size: 1rem;
+    }
+
+    .photos {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    .photos img {
+        aspect-ratio: 3/2;
+    }
+
+    .photos img:first-child {
+        margin-top: 0;
+    }
+
+    /* Services */
+    .services {
+        padding: 60px 16px 80px;
+    }
+
+    .services-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+    }
+
+    .service-card {
+        padding: 20px 16px;
+    }
+
+    .service-card-icon {
+        width: 30px;
+        height: 30px;
+        margin-bottom: 12px;
+        font-size: 14px;
+    }
+
+    .service-card h3 {
+        font-size: 0.85rem;
+    }
+
+    /* Image break */
+    .image-break {
+        height: 35vh;
+        min-height: 250px;
+    }
+
+    .image-break-text h2 {
+        font-size: 1.5rem;
+    }
+
+    /* CTA */
+    .cta-section {
+        padding: 60px 20px;
+    }
+
+    .cta-button {
+        padding: 14px 36px;
+        font-size: 1.1rem;
+        letter-spacing: 3px;
+    }
+
+    /* Footer */
+    footer .footer-top {
+        padding: 40px 20px 20px;
+    }
+
+    .contact-info li {
+        flex-direction: column;
+        gap: 4px;
+    }
+
+    /* Contact page */
+    .contact-2 { padding-bottom: 100px; }
+
+    /* Slideshow */
+    .mySlides { width: 100% !important; }
+}
+
+@media screen and (max-width: 400px) {
+
+    .hero-overlay h1 {
+        font-size: 2rem;
+    }
+
+    .services-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (max-width: 375px) {
+
+    .hero-overlay h1 {
+        font-size: 1.8rem;
+    }
+}
